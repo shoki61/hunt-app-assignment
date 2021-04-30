@@ -1,12 +1,13 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 
-import styles from '../Profile/style.js';
+import NavBar from '../../components/NavBar/NavBar';
+import styles from './style';
 
 const Profile = () => {
     return (
         <View>
-            <Text>profile</Text>
+            <NavBar/>
         </View>
     );
 };
