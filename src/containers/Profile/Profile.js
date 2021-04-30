@@ -6,7 +6,7 @@ import styles from './style';
 
 const Profile = () => {
     return (
-        <View>
+        <View style={styles.container} >
             <NavBar/>
         </View>
     );

@@ -3,10 +3,24 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     navBar:{
-        backgroundColor: '#000',
         width: '100%',
         height: 65,
-        
+        flexDirection:'row',
+        alignItems:'center',
+        justifyContent: 'space-between',
+        paddingHorizontal: 25
+    },
+    navBarLeft:{
+        flexDirection:'row',
+        alignContent:'center'
+    },
+    backBtn: {
+        justifyContent:'center'
+    },
+    navTitle:{
+        color:'#fff',
+        fontSize: 22,
+        marginLeft:15
     }
 });
 
