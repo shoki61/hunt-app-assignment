@@ -1,10 +1,7 @@
 import React from 'react';
-import {Text} from 'react-native';
 
+import Profile from './src/containers/Profile/Profile';
 
-const App = () => {
-  return <Text>test</Text>;
-};
-
+const App = () => <Profile/>;
 
 export default App;
