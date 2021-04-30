@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import SImage from 'react-native-scalable-image';
 
-import images from '../../assets/images/index'
+import images from '../../assets/images';
 import styles from './style';
 
 const NavBar = () => (
