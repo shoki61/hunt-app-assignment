@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import SImage from 'react-native-scalable-image';
+import ProgressCircle from 'react-native-progress-circle'
 
 import LolLevelPlat from '../../assets/images/lol_level_plat.svg';
 import LolRnakGold from '../../assets/images/lol_rank_gold_4.svg';
@@ -13,24 +14,36 @@ const GameStatistics = () => (
     <View style={styles.gameStatistics}>
         <Text style={styles.mostRecent}>Most Recent 20 Games</Text>
         <View style={styles.gameStatisticsInfo}>
-            <View style={styles.itemContainer}>
-                <View style={styles.levelIcon}>
-                    <LolLevelPlat/>
-                    <Text style={styles.level}>III</Text>
+            <View style={{flexDirection:'row'}}>
+                <View style={styles.itemContainer}>
+                    <View style={styles.levelIcon}>
+                        <LolLevelPlat/>
+                        <Text style={styles.level}>III</Text>
+                    </View>
+                    <Text style={styles.bottomText}>Solo/Duo</Text>
                 </View>
-                <Text style={styles.bottomText}>Solo/Duo</Text>
+
+                <View style={styles.itemContainer}>
+                    <View style={styles.levelIcon}>
+                        <LolRnakGold/>
+                        <Text style={styles.level}>IV</Text>
+                    </View>
+                    <Text style={styles.bottomText}>Flex</Text>
+                </View>
             </View>
 
             <View style={styles.itemContainer}>
-                <View style={styles.levelIcon}>
-                    <LolRnakGold/>
-                    <Text style={styles.level}>IV</Text>
-                </View>
-                <Text style={styles.bottomText}>Flex</Text>
-            </View>
-
-            <View>
-
+                <ProgressCircle
+                    percent={60}
+                    radius={30}
+                    borderWidth={9}
+                    color="#06AE43"
+                    shadowColor="#555"
+                    bgColor="#000"
+                >
+                    <Text style={styles.progressNumber}>60%</Text>
+                </ProgressCircle>
+                <Text style={styles.bottomText}>12W 8L</Text>
             </View>
 
             <View style={styles.itemContainer}>

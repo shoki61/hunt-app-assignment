@@ -12,6 +12,7 @@
   "dependencies": {
     "react": "17.0.1",
     "react-native": "0.64.0",
+    "react-native-progress-circle": "^2.1.0",
     "react-native-scalable-image": "^1.1.0",
     "react-native-svg": "^12.1.1",
     "react-native-svg-transformer": "^0.14.3"

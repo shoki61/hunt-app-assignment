@@ -12,7 +12,8 @@ const styles = StyleSheet.create({
     },
     gameStatisticsInfo:{
         flexDirection:'row',
-        alignItems:'flex-end', 
+        alignItems:'flex-end',
+        justifyContent: 'space-between',
         width:'100%'
     },
     itemContainer:{
@@ -40,13 +41,17 @@ const styles = StyleSheet.create({
         fontSize: 12,
         marginTop:3
     },
+    progressNumber:{
+        fontSize: 13,
+        color:'#fff'
+    },
     scoreContainer:{
         alignItems:'center'
     },
     scoreNumber:{
         color: '#fff',
-        fontSize:15,
-        marginBottom:3
+        fontSize:16,
+        marginBottom:5
     }
 });
 
