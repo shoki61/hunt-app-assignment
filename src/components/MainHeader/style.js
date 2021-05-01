@@ -2,18 +2,23 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     mainHeader:{
-        height:200,
+        height:195,
         position: 'relative',
         flexDirection:'row',
+        alignItems:'flex-end'
     },
     backImg: {
-        position: 'absolute'
+        position:'absolute',
+        top:0
     },
     mainHeaderInfo: {
-        flexDirection:'row'
+        flexDirection:'row',
+        paddingHorizontal:5
     },
-    profileContainer:{
-        alignItems: 'center'
+    itemsContainer:{
+        alignItems: 'center',
+        justifyContent:'flex-end',
+        marginHorizontal:5
     },
     profileImg:{
         borderRadius:100,
@@ -35,6 +40,17 @@ const styles = StyleSheet.create({
     profileLabel:{
         fontSize:13,
         color:'#777676'
+    },
+    fnatic:{
+        color:'#fff',
+        fontSize:14,
+        marginTop:3
+    },
+    badge:{
+        fontSize:10,
+        color:'#7C7C7C',
+        textAlign:'center',
+        marginTop:3
     }
 });
 
