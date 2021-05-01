@@ -5,7 +5,8 @@ const styles = StyleSheet.create({
         height:195,
         position: 'relative',
         flexDirection:'row',
-        alignItems:'flex-end'
+        alignItems:'flex-end',
+        width:'100%'
     },
     backImg: {
         position:'absolute',

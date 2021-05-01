@@ -10,6 +10,7 @@ const Profile = () => {
         <View style={styles.container} >
             <NavBar/>
             <MainHeader/>
+            <View style={styles.line}></View>
         </View>
     );
 };
