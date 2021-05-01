@@ -13,6 +13,7 @@ const Profile = () => {
             <MainHeader/>
             <View style={styles.line}></View>
             <GameStatistics/>
+            <View style={styles.line}></View>
         </View>
     );
 };

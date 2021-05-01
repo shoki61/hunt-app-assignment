@@ -6,7 +6,8 @@ const styles = StyleSheet.create({
         position: 'relative',
         flexDirection:'row',
         alignItems:'flex-end',
-        width:'100%'
+        width:'100%',
+        marginBottom:7
     },
     backImg: {
         position:'absolute',
