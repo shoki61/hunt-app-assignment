@@ -3,27 +3,25 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
     matchHistory:{
         width: '100%',
-        paddingHorizontal: 15,
-        marginVertical:5
+        marginVertical:5,
+        paddingHorizontal:10
     },
     tab: {
         width:'100%',
         height:30,
-        marginTop:50,
         backgroundColor:'#303030',
         flexDirection:'row',
-        justifyContent:'space-between',
         alignItems:'center',
-        paddingRight:10,
-        paddingLeft:30
+        paddingHorizontal:5
+    },
+    center:{
+        alignItems:'center'  
     },
     matchHistoryList:{
         flexDirection:'row',
         alignItems:'center',
         paddingVertical:5,
-        paddingLeft:7,
-        paddingRight:3,
-        justifyContent:'space-between',
+        paddingHorizontal:2,
         backgroundColor:'#172327',
         borderLeftWidth:4,
         borderRightWidth:4,
@@ -31,7 +29,8 @@ const styles = StyleSheet.create({
     },
     colText:{
         color: '#fff',
-        fontSize:12
+        fontSize:11,
+        textAlign:'center'
     },
     col1:{
         alignItems:'center'
@@ -42,8 +41,8 @@ const styles = StyleSheet.create({
     },
     col3Img:{
         borderRadius:100,
-        height:33,
-        width:33,
+        height:37,
+        width:37,
         borderWidth:1,
         borderColor:'#7D6D4B'
     },
@@ -64,14 +63,7 @@ const styles = StyleSheet.create({
     },
     col5Container:{
         alignItems:'center'
-    },
-
-
-
-
-    container: { flex: 1, padding: 16, paddingTop: 30, backgroundColor: '#fff' },
-  head: { height: 40, backgroundColor: '#f1f8ff' },
-  text: { margin: 6, }
+    }
 });
 
 export default styles;

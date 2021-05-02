@@ -27,7 +27,11 @@ const historyData = [
             date:'10h ago'
         },
         col2:<MiddleInverted/>,
-        col3:images.character2,
+        col3:{
+            left:images.lolRune1,
+            level:17,
+            right: images.group332
+        },
         col4:images.group522,
         col5:{
             iconTop:images.lolRune1,
@@ -41,134 +45,56 @@ const historyData = [
         col8: '113',
         col9: '6930'
     },
-    {
-        col1:{
-            case:'VICTORY',
-            time:'20:29 min',
-            date:'12h ago'
-        },
-        col2: <SupportInverted/>,
-        col3:images.character3,
-        col4:images.group522,
-        col5:{
-            iconTop:images.lolRune1,
-            iconBottom:images.lolRune4
-        },
-        col6:{
-            numberTop:'11/14/1',
-            numberBottom:'2.0'
-        },
-        col7:images.image51,
-        col8: '113',
-        col9: '6930'
-    },
-    {
-        col1:{
-            case:'VICTORY',
-            time:'34:09 min',
-            date:'yesterday'
-        },
-        col2:<TopInverted/>,
-        col3:images.character1,
-        col4:images.group521,
-        col5:{
-            iconTop:images.lolRune1,
-            iconBottom:images.lolRune3
-        },
-        col6:{
-            numberTop:'14/12/13',
-            numberBottom:'4.3'
-        },
-        col7:images.image52,
-        col8: '113',
-        col9: '6930'
-    },
-    {
-        col1:{
-            case:'VICTORY',
-            time:'17:13 min',
-            date:'yesterday'
-        },
-        col2:<MiddleInverted/>,
-        col3:images.character2,
-        col4:images.group521,
-        col5:{
-            iconTop:images.lolRune4,
-            iconBottom:images.lolRune4
-        },
-        col6:{
-            numberTop:'11/1/11',
-            numberBottom:'22.0'
-        },
-        col7:images.image52,
-        col8: '113',
-        col9: '6930'
-    },
-    {
-        col1:{
-            case:'VICTORY',
-            time:'23:19 min',
-            date:'10h ago'
-        },
-        col2:<MiddleInverted/>,
-        col3:images.character1,
-        col4:images.group522,
-        col5:{
-            iconTop:images.lolRune1,
-            iconBottom:images.lolRune4
-        },
-        col6:{
-            numberTop:'11/1/11',
-            numberBottom:'22.0'
-        },
-        col7:images.image52,
-        col8: '113',
-        col9: '6930'
-    }
 ];
 
-
-const data = [1, 2, 3, 4, 5];
 const MatchHistory = () => (
     <View style={styles.matchHistory}>
 
         <View style={styles.tab}>
-            <SandTimer width={12} height={12}/>
-            <PositionInverted width={12} height={12}/>
-            <ChampionInverted width={12} height={12}/>
-            <RunesInverted width={12} height={12}/>
-            <ScoreInverted width={12} height={12}/>
-            <ItemsInverted width={12} height={12}/>
-            <MinionInverted width={12} height={12}/>
-            <Group_506 width={12} height={12}/>
+            <View style={[styles.center,{width:'15%'}]}><SandTimer width={13} height={13}/></View>
+            <View style={[styles.center,{width:'9%'}]}><PositionInverted width={13} height={13}/></View>
+            <View style={[styles.center,{width:'17%'}]}><ChampionInverted width={13} height={13}/></View>
+            <View style={[styles.center,{width:'8%'}]}><RunesInverted width={13} height={13}/></View>
+            <View style={[styles.center,{width:'18%'}]}><ScoreInverted width={13} height={13}/></View>
+            <View style={[styles.center,{width:'15%'}]}><ItemsInverted width={13} height={13}/></View>
+            <View style={[styles.center,{width:'11%'}]}><MinionInverted width={13} height={13}/></View>
+            <View style={[styles.center,{flex:1}]}><Group_506 width={13} height={13}/></View>
         </View>
         <View>
-            <View style={styles.matchHistoryList}>
-                <View style={styles.col1}>
-                    <Text style={styles.colText}>VICTORY</Text>
-                    <Text style={styles.colText}>23:19 min</Text>
-                    <Text style={styles.colText}>10h ago</Text>
+            {historyData.map(item => <View key={item.col1.date} style={styles.matchHistoryList}>
+                <View style={[styles.col1,{width:'15%'}]}>
+                    <Text style={styles.colText}>{item.col1.case}</Text>
+                    <Text style={styles.colText}>{item.col1.time}</Text>
+                    <Text style={styles.colText}>{item.col1.date}</Text>
                 </View>
-                <MiddleInverted width={15} height={15}/>
-                <View style={styles.col3Container}>
+                <View style={[styles.center,{width:'9%'}]}>
+                   {item.col2}
+                </View>
+                <View style={[styles.col3Container,{width:'17%'}]}>
                     <View style={{marginRight:5}}>
-                        <Image style={styles.col3Img} source={images.lolChar2}/>
-                        <Text style={styles.col3Number}>17</Text>
+                        <Image style={styles.col3Img} source={item.col3.left}/>
+                        <Text style={styles.col3Number}>{item.col3.level}</Text>
                     </View>
-                    <SImage source={images.group521}/>
+                    <SImage source={item.col4}/>
                 </View>
-                <View>
-                    <SImage source={images.lolRune1}/>
-                    <SImage source={images.lolRune4}/>
+                <View style={[styles.center,{width:'8%'}]}>
+                    <SImage width={18} source={images.lolRune1}/>
+                    <SImage width={18} source={images.lolRune4}/>
                 </View>
-                <View style={styles.col5Container}>
+                <View style={[styles.col5Container,{width:'18%'}]}>
                     <Text style={styles.colText}>11/1/11</Text>
                     <Text style={[styles.colText,{opacity:.5}]}>22.0</Text>
                 </View>
-                <SImage width={40} source={images.image51}/>
-                <Text style={styles.colText}>113</Text>
-                <Text style={[styles.colText,{marginLeft:7}]}>6930</Text>
-            </View>
+                <View style={[styles.center,{width:'15%'}]}>
+                    <SImage width={50} source={images.image51}/>
+                </View>
+                <View style={{width:'11%'}}>
+                    <Text style={styles.colText}>113</Text>
+                </View>
+                <View style={{flex:1}}>
+                   <Text style={styles.colText}>6930</Text> 
+                </View>
+            </View>)}
         </View>
     </View>
 );
