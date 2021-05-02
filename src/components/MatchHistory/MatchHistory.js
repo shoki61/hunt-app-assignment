@@ -13,6 +13,7 @@ import Group_506 from '../../assets/images/Group_506.svg';
 import MiddleInverted from '../../assets/images/middle_inverted.svg';
 import TopInverted from '../../assets/images/top_inverted.svg';
 import SupportInverted from '../../assets/images/support_inverted.svg';
+import MatchTab from './MatchTab/MatchTab';
 import images from '../../assets/images';
 
 
@@ -49,17 +50,7 @@ const historyData = [
 
 const MatchHistory = () => (
     <View style={styles.matchHistory}>
-
-        <View style={styles.tab}>
-            <View style={[styles.center,{width:'15%'}]}><SandTimer width={13} height={13}/></View>
-            <View style={[styles.center,{width:'9%'}]}><PositionInverted width={13} height={13}/></View>
-            <View style={[styles.center,{width:'17%'}]}><ChampionInverted width={13} height={13}/></View>
-            <View style={[styles.center,{width:'8%'}]}><RunesInverted width={13} height={13}/></View>
-            <View style={[styles.center,{width:'18%'}]}><ScoreInverted width={13} height={13}/></View>
-            <View style={[styles.center,{width:'15%'}]}><ItemsInverted width={13} height={13}/></View>
-            <View style={[styles.center,{width:'11%'}]}><MinionInverted width={13} height={13}/></View>
-            <View style={[styles.center,{flex:1}]}><Group_506 width={13} height={13}/></View>
-        </View>
+        <MatchTab/>
         <View>
             {historyData.map(item => <View key={item.col1.date} style={styles.matchHistoryList}>
                 <View style={[styles.col1,{width:'15%'}]}>
