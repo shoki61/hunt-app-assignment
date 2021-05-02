@@ -1,26 +1,8 @@
 import React from 'react';
 import images from './assets/images';
 import MiddleInverted from './assets/images/middle_inverted.svg';
-import ChampionInverted from './assets/images/champion_inverted.svg';
-import Group_521 from './assets/images/Group_521.png';
-import Group_522 from './assets/images/Group_522.png';
-import LolChar1 from './assets/images/lol_char-1.png';
-import LolChar2 from './assets/images/lol_char-2.png';
-import LolChar3 from './assets/images/lol_char-3.png';
-import Image_51 from './assets/images/Image_51.png';
-import Image_52 from './assets/images/Image_52.png';
-import Image_53 from './assets/images/Image_53.png';
-import LolRune1 from './assets/images/lol_rune1.png';
-import LolRune3 from './assets/images/lol_rune3.png';
-import LolRune4 from './assets/images/lol_rune4.png';
-import Group_332 from './assets/images/Group_332.svg';
-import Group_506 from './assets/images/Group_506.svg';
-import Group_546 from './assets/images/Group_546.svg';
-import Group_562 from './assets/images/Group_562.svg';
 import TopInverted from './assets/images/top_inverted.svg';
 import SupportInverted from './assets/images/support_inverted.svg';
-import ScoreInverted from './assets/images/score_inverted.svg';
-
 
 export const historyData = [
     {

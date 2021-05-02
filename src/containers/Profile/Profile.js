@@ -10,18 +10,18 @@ import styles from './style';
 
 const Profile = () => {
     return (
-            <Fragment>
-                <NavBar/>
-                <ScrollView contentContainerStyle={styles.scrollView}>
-                    <MainHeader/>
-                    <View style={styles.line}/>
-                    <GameStatistics/>
-                    <View style={styles.line}/>
-                    <MostPlayed/>
-                    <View style={styles.line}/>
-                    <MatchHistory/>
-                </ScrollView>
-            </Fragment>
+        <Fragment>
+            <NavBar/>
+            <ScrollView contentContainerStyle={styles.scrollView}>
+                <MainHeader/>
+                <View style={styles.line}/>
+                <GameStatistics/>
+                <View style={styles.line}/>
+                <MostPlayed/>
+                <View style={styles.line}/>
+                <MatchHistory/>
+            </ScrollView>
+        </Fragment>
     );
 };
 

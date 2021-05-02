@@ -3,14 +3,12 @@ import { View, Text, Image } from 'react-native';
 import SImage from 'react-native-scalable-image';
 
 import { historyData } from '../../../data';
-
 import styles from './style';
 
-
 const MatchList = () => {
-    const checkIndexIsEven = (n) => {
+    const checkIndexIsEven = n => {
         return n % 2 == 0;
-    }
+    };
     return <View>
         {historyData.map((item, index) => (
             <View 
