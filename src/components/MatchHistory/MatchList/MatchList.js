@@ -2,14 +2,25 @@ import React from 'react';
 import { View, Text, Image } from 'react-native';
 import SImage from 'react-native-scalable-image';
 
-import images from '../../../assets/images';
 import { historyData } from '../../../data';
 
 import styles from './style';
 
-const MatchList = () => (
-    <View>
-        {historyData.map(item => <View key={item.col1.date} style={styles.matchHistoryList}>
+
+const MatchList = () => {
+    const checkIndexIsEven = (n) => {
+        return n % 2 == 0;
+    }
+    return <View>
+        {historyData.map((item, index) => (
+            <View 
+                key={item.id} 
+                style={[styles.matchHistoryList,
+                    {
+                        borderColor: checkIndexIsEven(index) ? '#2980B9' : '#C03A2B',
+                        backgroundColor: checkIndexIsEven(index) ? '#172327' : '#280D0A'
+                    }
+                ]}>
                 <View style={[styles.col1,{width:'15%'}]}>
                     <Text style={styles.colText}>{item.col1.case}</Text>
                     <Text style={styles.colText}>{item.col1.time}</Text>
@@ -42,8 +53,9 @@ const MatchList = () => (
                 <View style={{flex:1}}>
                    <Text style={styles.colText}>{item.col8}</Text> 
                 </View>
-            </View>)}
+            </View>))}
+            <Text style={styles.historyListText}>Match History</Text>
     </View>
-);
+};
 
 export default MatchList;

@@ -1,7 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-const styles = StyleSheet.create({
-    
+const styles = StyleSheet.create({    
     center:{
         alignItems:'center'  
     },
@@ -10,10 +9,8 @@ const styles = StyleSheet.create({
         alignItems:'center',
         paddingVertical:5,
         paddingHorizontal:2,
-        backgroundColor:'#172327',
         borderLeftWidth:4,
         borderRightWidth:4,
-        borderColor:'#2980B9'
     },
     colText:{
         color: '#fff',
@@ -51,6 +48,12 @@ const styles = StyleSheet.create({
     },
     col5Container:{
         alignItems:'center'
+    },
+    historyListText:{
+        color:'#fff',
+        textAlign:'center',
+        marginVertical:5,
+        fontSize:17
     }
 });
 

@@ -24,6 +24,7 @@ import ScoreInverted from './assets/images/score_inverted.svg';
 
 export const historyData = [
     {
+        id:0,
         col1:{
             case:'VICTORY',
             time:'23:19 min',
@@ -48,6 +49,7 @@ export const historyData = [
         col8: '6930'
     },
     {
+        id:1,
         col1:{
             case:'VICTORY',
             time:'20:29 min',
@@ -72,6 +74,7 @@ export const historyData = [
         col8: '6930'
     },
     {
+        id:2,
         col1:{
             case:'VICTORY',
             time:'34:09 min',
@@ -92,6 +95,56 @@ export const historyData = [
             numberBottom:'4.3'
         },
         col6:images.image52,
+        col7: '113',
+        col8: '6930'
+    },
+    {
+        id:3,
+        col1:{
+            case:'VICTORY',
+            time:'17:03 min',
+            date:'yesterday'
+        },
+        col2:<MiddleInverted/>,
+        col3:{
+            left:images.lolChar2,
+            level:14,
+            right: images.group521
+        },
+        col4:{
+            imgTop: images.lolRune4,
+            imgBottom: images.lolRune3
+        },
+        col5:{
+            numberTop:'12/11/9',
+            numberBottom:'1.8'
+        },
+        col6:images.image53,
+        col7: '113',
+        col8: '6930'
+    },
+    {
+        id:4,
+        col1:{
+            case:'VICTORY',
+            time:'33:19 min',
+            date:'2 days ego'
+        },
+        col2:<MiddleInverted/>,
+        col3:{
+            left:images.lolChar3,
+            level:14,
+            right: images.group522
+        },
+        col4:{
+            imgTop: images.lolRune1,
+            imgBottom: images.lolRune3
+        },
+        col5:{
+            numberTop:'1/12/21',
+            numberBottom:'1.7'
+        },
+        col6:images.image51,
         col7: '113',
         col8: '6930'
     },

@@ -3,8 +3,7 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
     scrollView:{
         backgroundColor: '#000',
-        alignItems:'center', 
-        paddingBottom: 5
+        alignItems:'center'
     },
     line:{
         width:'85%',
