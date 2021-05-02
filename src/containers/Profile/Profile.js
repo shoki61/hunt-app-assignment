@@ -1,5 +1,5 @@
-import React from 'react';
-import {View, Text} from 'react-native';
+import React, { Fragment } from 'react';
+import {View, ScrollView} from 'react-native';
 
 import NavBar from '../../components/NavBar/NavBar';
 import MainHeader from '../../components/MainHeader/MainHeader';
@@ -10,16 +10,18 @@ import styles from './style';
 
 const Profile = () => {
     return (
-        <View style={styles.container} >
-            <NavBar/>
-            <MainHeader/>
-            <View style={styles.line}/>
-            <GameStatistics/>
-            <View style={styles.line}/>
-            <MostPlayed/>
-            <View style={styles.line}/>
-            <MatchHistory/>
-        </View>
+            <Fragment>
+                <NavBar/>
+                <ScrollView contentContainerStyle={styles.scrollView}>
+                    <MainHeader/>
+                    <View style={styles.line}/>
+                    <GameStatistics/>
+                    <View style={styles.line}/>
+                    <MostPlayed/>
+                    <View style={styles.line}/>
+                    <MatchHistory/>
+                </ScrollView>
+            </Fragment>
     );
 };
 

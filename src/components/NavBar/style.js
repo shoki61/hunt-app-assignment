@@ -8,7 +8,8 @@ const styles = StyleSheet.create({
         flexDirection:'row',
         alignItems:'center',
         justifyContent: 'space-between',
-        paddingHorizontal: 25
+        paddingHorizontal: 25,
+        backgroundColor:'#000'
     },
     navBarLeft:{
         flexDirection:'row',
