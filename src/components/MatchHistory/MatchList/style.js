@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
     col3Container:{
         flexDirection:'row',
         alignItems:'center',
+        justifyContent:'center',
     },
     col3Img:{
         borderRadius:100,
